@@ -19,6 +19,7 @@ function saveIssue(e){
     let issues = [];
     issues.push(issue);
     localStorage.setItem('issues', JSON.stringify(issues));
+    console.log("new item created")
   } else {
     let issues = JSON.parse(localStorage.getItem('issues'));
     issues.push(issue);
